@@ -1,0 +1,139 @@
+.contactme-header {
+  margin: 5%;
+  text-align: center;
+}
+#ContactMe {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactme-header h1 {
+  font-family: cursive;
+  color: rgb(14, 14, 36);
+}
+.contact-line {
+  background-color: rgb(90, 62, 62);
+  width: 150px;
+  height: 2.1px;
+  margin: 0 auto;
+}
+.about-line {
+  background-color: rgb(255, 68, 0);
+  width: 25px;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: 50px;
+  transform: scale(2);
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  background-color: rgb(3, 3, 19);
+  width: 90%;
+  margin: 0 !important;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.content-wrapper h2 {
+  color: aliceblue;
+}
+.inner-content {
+  display: flex;
+  justify-content: space-between;
+}
+.content-h5 {
+  margin-top: 20px;
+  color: aliceblue;
+  letter-spacing: 5px;
+}
+
+.img-container {
+  margin: 45px 0 0 0px;
+}
+.mailz {
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px gray;
+}
+.form-wrapper {
+  display: grid;
+  background-color: grey;
+  border-radius: 10px;
+  padding: 15px;
+  height: 300px;
+  width: 50%;
+  box-shadow: 1px 2px 10px grey;
+}
+input {
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px grey;
+  font-family: cursive;
+  height: 30px;
+  font-size: larger;
+}
+.btn-message {
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px grey;
+  margin-bottom: 10px;
+  font-family: cursive;
+  font-size: larger;
+}
+.send-btn {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(14, 14, 36);
+  color: aliceblue;
+  font-size: larger;
+}
+.send-btn:hover {
+  background-color: rgb(255, 68, 0);
+}
+.send-popup {
+  color: rgb(130, 226, 130);
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 750px) {
+  input {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .btn-message {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .inner-content {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content-wrapper {
+    margin: 0 auto;
+    width: 85%;
+    margin: 25px;
+    padding: 25px;
+  }
+  .inner-content {
+    display: grid;
+    width: 90%;
+  }
+  .mailz {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .form-wrapper {
+    width: auto;
+  }
+  .content-wrapper {
+    height: 50%;
+    margin: 0% 0 0 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+}

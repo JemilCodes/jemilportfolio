@@ -1,0 +1,393 @@
+.resume-wrapper {
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 10px;
+}
+.resume-header {
+  text-align: center;
+  margin: 5%;
+}
+.resume-header h1 {
+  font-family: cursive;
+  color: rgb(14, 14, 36);
+}
+
+.resume-content-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.resume-notation-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  box-shadow: 1px 1px 10px grey;
+}
+.resume-notation-flex {
+  display: flex;
+}
+.resume-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 14, 36);
+  padding: 10px 9px 5px 9px;
+}
+.resume-notation-name {
+  width: 70%;
+  cursor: pointer;
+  margin: 25px 0px 25px 0px;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-border-radius: 0px 15px 15px 0px;
+  -moz-border-radius: 0px 15px 15px 0px;
+  -ms-border-radius: 0px 15px 15px 0px;
+  -o-border-radius: 0px 15px 15px 0px;
+  padding: 10px 5px 5px 5px;
+}
+/* .resume-notation-name {
+  width: 70%;
+  cursor: pointer;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-border-radius: 0px 15px 15px 0px;
+  -moz-border-radius: 0px 15px 15px 0px;
+  -ms-border-radius: 0px 15px 15px 0px;
+  -o-border-radius: 0px 15px 15px 0px;
+  padding: 10px 5px 5px 5px;
+} */
+/* .notation-icon-container {
+  display: grid;
+  padding-top: 34px;
+  padding-left: 6px;
+  height: 100%;
+  width: 30px;
+  background-color: rgb(14, 14, 36);
+} */
+/* .resume-notation {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-shadow: 1px 1px 10px grey;
+  width: 80%;
+  height: 100%;
+  background-color: red;
+} */
+
+.scroll {
+  margin: 25px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 300px;
+  width: 100%;
+}
+
+/* starting education css section */
+
+.education-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+}
+.edu-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.edu-wrapper h5 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 68, 0);
+  margin-bottom: 20px;
+}
+.edu-wrapper h6 {
+  margin-left: 20px;
+  color: rgb(14, 14, 36);
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.edu-wrapper .date {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 68, 0);
+  margin-top: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: aliceblue;
+}
+
+@media screen and (max-width: 1050px) {
+  .edu-wrapper {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .education-wrapper {
+    margin-left: 10%;
+  }
+}
+
+/* ending education css section */
+
+/* starting work css section */
+
+.work-content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.sum-wrapper {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.sum-header {
+  display: flex;
+  justify-content: space-between;
+}
+.sum-header h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 68, 0);
+  margin-bottom: 20px;
+}
+.sum-header h6 {
+  margin-left: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+.sum-header .date {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 68, 0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: aliceblue;
+}
+.sum-wrapper li {
+  margin: 10px;
+  list-style: none;
+}
+@media screen and (max-width: 400px) {
+  .sum-header {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  .work-content-wrapper {
+    margin-left: 10%;
+  }
+}
+
+/* ending work css section */
+
+/* starting  css section */
+.skill-wrapper {
+  width: 95%;
+}
+.level-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+}
+.level-wrapper {
+  width: 40%;
+  border-radius: 10px;
+
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+}
+.second-level-wrapper {
+  width: 40%;
+  border-radius: 10px;
+
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+}
+.level-content-wrapper h5 {
+  font-size: x-large;
+  color: rgb(0, 0, 0);
+  font-family: monospace;
+}
+.percentage-wrapper {
+  /* margin-top: 50px; */
+  margin-bottom: 50px;
+}
+.level-percentage {
+  display: flex;
+  justify-content: space-between;
+}
+.html-level {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(255, 68, 0);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.in-html-level {
+  width: 90%;
+  height: 20px;
+  background-color: rgb(14, 14, 36);
+}
+.react-level {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(255, 68, 0);
+  border-radius: 10px;
+}
+.in-react-level {
+  width: 80%;
+  height: 20px;
+  background-color: rgb(14, 14, 36);
+}
+.css-level {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(255, 68, 0);
+  border-radius: 10px;
+}
+.in-css-level {
+  width: 70%;
+  height: 20px;
+  background-color: rgb(14, 14, 36);
+}
+.javascript-level {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(255, 68, 0);
+  border-radius: 10px;
+}
+.in-javascript-level {
+  width: 80%;
+  height: 20px;
+  background-color: rgb(14, 14, 36);
+}
+.node-level {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(255, 68, 0);
+  border-radius: 10px;
+}
+.in-node-level {
+  width: 50%;
+  height: 20px;
+  background-color: rgb(14, 14, 36);
+}
+.wordpress-level {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(255, 68, 0);
+  border-radius: 10px;
+}
+.in-wordpress-level {
+  width: 70%;
+  height: 20px;
+  background-color: rgb(14, 14, 36);
+}
+
+@media screen and (max-width: 850px) {
+  .level-content-wrapper {
+    flex-direction: column;
+  }
+  .level-wrapper {
+    padding-left: 8%;
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  .second-level-wrapper {
+    padding-left: 8%;
+    width: 95%;
+    margin-top: 20px;
+  }
+}
+/* ending  css section */
+
+/* starting project css */
+
+.project-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: rgb(14, 14, 36);
+  color: aliceblue;
+  box-shadow: 1px 2px 10px rgb(14, 14, 36);
+}
+
+.project-content-wrapper {
+  text-align: center;
+}
+.project-content-wrapper h5 {
+  color: coral;
+  font-size: larger;
+}
+.project-content-wrapper h6 {
+  font-size: larger;
+}
+.text-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 68, 0);
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.p-content {
+  flex-direction: column;
+
+  margin: 0;
+}
+.p-float {
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 750px) {
+  .project-wrapper {
+    width: 100%;
+  }
+}
+
+/* ending projec css section */
+
+@media screen and (max-width: 750px) {
+  .resume-content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .resume-notation-wrapper {
+    width: 90%;
+  }
+  .scroll {
+    width: 100%;
+    margin: 50px 0px 25px 20px;
+  }
+}
