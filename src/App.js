@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import { FaCopy } from "react-icons/fa";
 
 export default function App() {
   const [input1, setInput1] = useState("#00ff00");
   const [input2, setInput2] = useState("#ffbb00");
   const [gradient, setGradient] = useState(true);
+  const [copied, setCopied] = useState(false);
 
   const inputPicker = (event) => {
     setInput1(event.target.value);
@@ -27,6 +30,11 @@ export default function App() {
   const gradientToggler = () => {
     setGradient((prev) => !prev);
   };
+  setTimeout(() => {
+    if (copied === true) {
+      setCopied(false);
+    }
+  }, 1000);
   return (
     <div className="app-container">
       <header>
@@ -47,11 +55,24 @@ export default function App() {
         />
       </main>
       <section>
-        <div>
-          <h2>CURRENT CSS GRADIENT</h2>
+        <h2>CURRENT CSS GRADIENT</h2>
+        <div className="flex">
           <h3>{`linear-gradient(${
             gradient ? "to right" : "to left"
-          }, ${input1} ,  ${input2}  )`}</h3>
+          }, ${input1} ,  ${input2})`}</h3>
+          {!copied && (
+            <CopyToClipboard
+              text={`linear-gradient(${
+                gradient ? "to right" : "to left"
+              }, ${input1} ,  ${input2})`}
+              onCopy={() => setCopied(true)}
+            >
+              <span className="Facopy">
+                <FaCopy />
+              </span>
+            </CopyToClipboard>
+          )}
+          {copied && <span className="copied">copied</span>}
         </div>
       </section>
       <button style={styles} onClick={gradientToggler}>

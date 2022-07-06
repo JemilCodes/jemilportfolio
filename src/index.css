@@ -18,7 +18,7 @@ section {
   box-shadow: 1px 1px 10px grey;
 }
 section h3 {
-  color:whitesmoke;
+  color: whitesmoke;
 }
 button {
   height: 50px;
@@ -27,4 +27,17 @@ button {
   font-weight: bold;
   color: aliceblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Facopy {
+  margin: 18px 10px 10px 10px;
+  cursor: pointer;
+}
+.copied {
+  color: green;
+  margin: 10px;
 }
