@@ -281,7 +281,7 @@ export default function Resume() {
                       A Personal Portofolio Website to showcase all my details
                       and project at one space
                     </p>
-                    <a href="https://jemilweb.herokuapp.com/">
+                    <a href="https://jemilportfolio.herokuapp.com/">
                       click me to visit this project
                     </a>
                     <div className="text-div p-float">2021-2022</div>
